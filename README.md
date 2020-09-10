@@ -85,7 +85,11 @@ On submit the form action will submit the keyword to search result page search.p
     $mats = getSearchMat('null');
     }
     
-   This will check if  the key work is empty and call the functions in dth_function.php to find the key word in three tables and retrive the query. 
+   This will check if  the key work is empty and call the functions in dth_function.php to find the key word in three tables and retrive the query.
+   The rest of the codes in file  will show the search result.
+   
+   
+   
     
 
 
