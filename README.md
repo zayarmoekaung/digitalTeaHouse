@@ -22,7 +22,7 @@ The Below codes are for Search Bar in Mobile View.
   
      <img class="msearch" src="<?php echo BASE_URL . 'static/images/search.png' ?>" onclick="appear2()">
   
-  By clicking the search icon appear2 function is called to show mobile search bar.
+  By clicking the search icon appear2 function is called to show mobile search page.
  
 
 
