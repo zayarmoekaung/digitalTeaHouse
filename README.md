@@ -39,20 +39,40 @@ The Below codes are for Search Bar in Mobile View.
  
  These above codes will show mobile search page.
  
- <div id="searchpg2" class="wsearchbox">
-  <form action="<?php echo BASE_URL . 'search.php' ?>" method="post"  >
-  <input type="text"  id="key_word" name="key_word" placeholder="ဘာကိုရှာချင်ပါသလည်း?" class="wsearchf">
- <input type="submit" name="Search" class="wsearchbtn"></input>
-  </form>
+    <header class="wnavbar"  >
+
+
+    <h1><a class="navlogo" href="<?php echo BASE_URL ?>"><img class="img-fluid" src="<?php echo BASE_URL . 'static/images/Logo.png'?>" alt="Digital Tea House" style="width: auto; height: auto; max-width: 200px; max-height: 180px; margin-left: 30px;"></a></h1>
+     <div class="navmenulist"> 
+    <label class="teext" style="cursor: pointer;" onclick=location.href="<?php echo BASE_URL . 'index.php' ?>">  ပင်မစာမျက်နှာ </label>
+     <label class="teext" style="cursor: pointer;" onclick=location.href="<?php echo BASE_URL . 'articlelist.php'?>"> ဒစ်ဂျစ်တယ်ဖတ်စရာများ </label>
+    <label class="teext" style="cursor: pointer;" onclick=location.href="<?php echo BASE_URL . 'materials.php'?>"> စာအုပ်စင် </label>
+     <label class="teext" style="cursor: pointer;" onclick=location.href="<?php echo BASE_URL . 'digitalradio.php'?>"> ဒစ်ဂျစ်တယ်ရေဒီယို </label>
+     <label class="teext" style="cursor: pointer;" onclick=location.href="<?php echo BASE_URL . 'about.php'?>"> လဖက်ရည်ဆိုင်အကြောင်း </label>
+        <img src="<?php echo BASE_URL . 'static/images/search.png'?>" style="width: 24px; height: 24px; cursor: pointer;" onclick="appear2()">
+    </div>
+    
+     
+     
   
-</div>  
+   
+</header>
+
+The Above codes will show web menu bar. By clicking the search icon appear2 function is called to show search popup box.
+ 
+ 
+ 
+    <div id="searchpg2" class="wsearchbox">
+    <form action="<?php echo BASE_URL . 'search.php' ?>" method="post"  >
+    <input type="text"  id="key_word" name="key_word" placeholder="ဘာကိုရှာချင်ပါသလည်း?" class="wsearchf">
+    <input type="submit" name="Search" class="wsearchbtn"></input>
+    </form>
+  
+    </div>  
 
 These above codes will show web search popup box
 
- 
- 
- 
- On submit the form action will submit the keyword to search result page.
+On submit the form action will submit the keyword to search result page search.php.
       
 
 
