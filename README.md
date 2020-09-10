@@ -62,7 +62,7 @@ The Above codes will show web menu bar. By clicking the search icon appear2 func
  
  
  
-    <div id="searchpg2" class="wsearchbox">
+    <div id="searchpg2" class="wsearchbox"> 
     <form action="<?php echo BASE_URL . 'search.php' ?>" method="post"  >
     <input type="text"  id="key_word" name="key_word" placeholder="ဘာကိုရှာချင်ပါသလည်း?" class="wsearchf">
     <input type="submit" name="Search" class="wsearchbtn"></input>
@@ -74,7 +74,19 @@ These above codes will show web search popup box
 
 On submit the form action will submit the keyword to search result page search.php.
       
-
+    if (isset($_POST['key_word'])) {
+    $arts = getSearchArt($_POST['key_word']);
+    $pods = getSearchPod($_POST['key_word']);
+    $mats = getSearchMat($_POST['key_word']);
+    }
+     if (empty($_POST['key_word'])) {
+  	$arts = getSearchArt('null');
+    $pods = getSearchPod('null');
+    $mats = getSearchMat('null');
+    }
+    
+   This will check if  the key work is empty and call the functions in dth_function.php to find the key word in three tables and retrive the query. 
+    
 
 
 
